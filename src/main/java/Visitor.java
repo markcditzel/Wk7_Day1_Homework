@@ -27,5 +27,9 @@ public class Visitor {
         return this.money;
     }
 
+    public double setMoney(double fee){
+        return this.money - fee;
+    }
+
 
 }

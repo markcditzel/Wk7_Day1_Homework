@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public abstract class Attraction {
+public abstract class Attraction implements IReviewed{
 
     // PROPERTIES
 
@@ -13,6 +13,21 @@ public abstract class Attraction {
         this.name = name;
         this.rating = rating;
     }
+
+    //METHODS
+
+    //GETTERS
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    //SETTERS
+
+    //OTHER
 
 
 }

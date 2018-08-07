@@ -1,4 +1,4 @@
-public class Stall {
+public abstract class Stall implements IReviewed{
 
     // PROPERTIES
 
@@ -15,4 +15,19 @@ public class Stall {
         this.ownerName = ownerName;
         this.parkingSpot = parkingSpot;
     }
+
+    //METHODS
+
+    //GETTERS
+    public int getRating(){
+        return this.rating;
+    }
+
+    public String getName(){
+        return this.name;
+    }
+
+    //SETTERS
+
+    //OTHER
 }

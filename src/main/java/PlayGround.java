@@ -1,4 +1,4 @@
-public class PlayGround extends Attraction {
+public class PlayGround extends Attraction implements ISecurity{
 
     // PROPERTIES
     // N/A
@@ -8,4 +8,16 @@ public class PlayGround extends Attraction {
         super(name, rating);
     }
 
-}
+    //METHODS
+
+    public boolean isAllowedTo(Visitor visitor) {
+        if (visitor.getAge() <= 15) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+}// CLOSE INTERFACE

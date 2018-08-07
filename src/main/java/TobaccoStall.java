@@ -1,4 +1,4 @@
-public class TobaccoStall extends Stall implements ITicketed, ISecurity{
+public class TobaccoStall extends Stall implements ITicketed, ISecurity{//OPEN CLass
     //PROPERTIES
     // N/A
 
@@ -18,10 +18,14 @@ public class TobaccoStall extends Stall implements ITicketed, ISecurity{
         return 1.99;
     }
 
-    public boolean isAllowedTo(Visitor visitor){
-        if (visitor.getAge()) >= 18) {
-    return true;
+    public boolean isAllowedTo(Visitor visitor) {
+        if (visitor.getAge() >= 18) {
+            return true;
+        } else {
+            return false;
         }
-
     }
-}
+
+
+}//CLOSE Class
+
